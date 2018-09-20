@@ -1,4 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Introduction](README.md)
+* [Bluzelle's Protobuf API](bluzelles-protobuf-api.md)
+* [WebSocket Architecture](websocket-architecture.md)
 
