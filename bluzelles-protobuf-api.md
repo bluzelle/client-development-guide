@@ -6,6 +6,10 @@ Database requests are [protobuf](https://github.com/google/protobuf) serial outp
 
 Database responses are direct serial output through WebSocket. The protobuf message type for responses is `database_response`.
 
+{% hint style="info" %}
+Note: While not restricted by protobuf, the maximum size for keys is 4kB and the maximum size for values is 256kB.
+{% endhint %}
+
 ## The command lifecycle
 
 1. Generate a `database_msg` object as specified in [database.proto](https://github.com/bluzelle/swarmDB/blob/devel/proto/database.proto). \(Please see the [protobuf documentation](https://developers.google.com/protocol-buffers/) for details on using protobuf in your language\)
