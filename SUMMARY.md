@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Bluzelle's Protobuf API](bluzelles-protobuf-api.md)
-* [Bluzelle Documentation Hub](https://devel-docs.bluzelle.com/developers/)
 * [Client Architecture](client-architecture.md)
+* [Bluzelle Documentation Hub](https://devel-docs.bluzelle.com/developers/)
 
 ## Layers
 
