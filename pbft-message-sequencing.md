@@ -4,5 +4,5 @@ With the introduction of PBFT, the request-response system is augmented to inclu
 
 Refer to the following sequence diagram.
 
-![](.gitbook/assets/screen-shot-2018-09-21-at-3.23.14-pm.png)
+![](https://github.com/bluzelle/client-development-guide/tree/6704e166687ba2ffe671778c932dfc813c3d3938/.gitbook/assets/screen-shot-2018-09-21-at-3.23.14-pm.png)
 

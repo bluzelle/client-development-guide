@@ -32,5 +32,5 @@ For the JavaScript command `bluzelle.create('hello', 'world');`, the `bluzelle-j
 
 It will receive a _binary response_, which should be interpreted as the `database_response` object in [database.proto](https://github.com/bluzelle/swarmDB/blob/devel/proto/database.proto).
 
-The adherence to a protobuf specification makes it easy to fill in requests and interpret responses as the structure of the specification forces you to create well-formed messages. 
+The adherence to a protobuf specification makes it easy to fill in requests and interpret responses as the structure of the specification forces you to create well-formed messages.
 
