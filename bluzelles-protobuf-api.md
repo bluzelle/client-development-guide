@@ -16,7 +16,7 @@ Note: While not restricted by protobuf, the maximum size for keys is 4kB and the
 
 ## Message Envelopes
 
-There are instances where messages must be signed in either direction. For signed messages, instead of directly embedding them inside of parent messages, the Bluzelle protobuf specification embeds their serializations \(these fields are denoted "...payload" and have types `bytes`\). It is necessary to embed the serializations because protobuf serializations are non-deterministic; signed messages cannot be recreated verification on the other end. 
+There are instances where messages must be signed in either direction. For signed messages, instead of directly embedding them inside of parent messages, the Bluzelle protobuf specification embeds their serializations \(these fields are denoted "...payload" and have types `bytes`\). It is necessary to embed the serializations because protobuf serializations are non-deterministic; signed messages cannot be recreated for verification on the other end. 
 
 Alongside the payload, there is a signature and public key.
 
