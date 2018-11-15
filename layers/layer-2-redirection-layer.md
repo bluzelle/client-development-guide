@@ -2,7 +2,7 @@
 
 ### Background 
 
-All write-style requests should be directed to the swarm leader. This layer no longer resides in the client.
+All mutating requests should be directed to the swarm leader. This layer no longer resides in the client.
 
 ### Specifications
 
