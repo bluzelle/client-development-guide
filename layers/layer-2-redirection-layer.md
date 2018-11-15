@@ -1,4 +1,4 @@
-# Layer 2: Redirection Layer
+# Layer 3: Redirection Layer
 
 ### Background 
 

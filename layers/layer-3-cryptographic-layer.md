@@ -1,4 +1,4 @@
-# Layer 3: Cryptographic Layer
+# Layer 2: Cryptographic Layer
 
 ### Background
 
@@ -21,7 +21,8 @@ Only the first point below \(permissioning\) is to be implemented in Bernoulli, 
 
 * All Bluzelle keys are ECDSA on the curve `secp256k1`.
 * The client must accept a key-pair argument in a way that is reasonable to the application. For desktop applications, this will be through a `.pem` file on the filesystem. For web applications, it will be through an argument.
-* All subsequent layers are assumed to be working with the interpreted payload.
+* If a signature is not valid, throw an error.
+* All subsequent layers may be assume to be working with the interpreted payload.
 
 
 
