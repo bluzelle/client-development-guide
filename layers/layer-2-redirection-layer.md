@@ -7,5 +7,5 @@ All mutating requests should be directed to the swarm leader. This layer no long
 ### Specifications
 
 * The redirect field from an incoming database response should never be set.
-* All subsequent layers should assume that a message response is never a redirection.
+* All subsequent layers should assume that the redirect field is not set.
 
