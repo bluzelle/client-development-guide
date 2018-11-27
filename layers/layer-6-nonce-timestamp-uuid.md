@@ -1,8 +1,8 @@
-# Layer 6: Nonce, Timestamp, UUID
+# Layer 6: Metadata Layer
 
 ### Background
 
-All database requests contain a header with a timestamp, nonce, and database uuid. The header is mirrored in any replies from the daemon. 
+All database requests contain a header with a nonce and database uuid. The header is mirrored in any replies from the daemon. 
 
 ### Specifications
 
