@@ -21,7 +21,7 @@ Please see the [protobuf documentation](https://developers.google.com/protocol-b
 1. Generate a `database_msg` in [database.proto](https://github.com/bluzelle/swarmDB/blob/devel/proto/database.proto) with the appropriate fields.
 2. Generate a `bzn_envelope` object as specified in [bluzelle.proto](https://github.com/bluzelle/swarmDB/blob/devel/proto/bluzelle.proto).
 3. Serialize the `database_msg` and put that in the `database_msg` field in the `bzn_envelope`.
-4. Fill in the cryptographic information in the `bzn_envelope` \(details in [Layer 2: Cryptographic Layer](layers/layer-3-cryptographic-layer.md)\).
+4. Fill in the cryptographic information in the `bzn_envelope` \(details in [Layer 2: Cryptographic Layer](layers/layer-2-cryptographic-layer.md)\).
 5. Serialize the `bzn_envelope` and send it over the wire.
 
 ### Receiving a database response
@@ -52,5 +52,5 @@ Alongside the payload, there is a signature and public key.
 
 Bluzelle uses ECDSA keys along the curve `secp256k1`.
 
-See [Layer 2: Cryptographic Layer](layers/layer-3-cryptographic-layer.md) for more on signing.
+See [Layer 2: Cryptographic Layer](layers/layer-2-cryptographic-layer.md) for more on signing.
 

@@ -8,7 +8,7 @@
 ## Layers
 
 * [Layer 1: Persistent Connection](layers/layer-1-persistent-connection.md)
-* [Layer 2: Cryptographic Layer](layers/layer-3-cryptographic-layer.md)
-* [Layer 3: Metadata Layer](layers/layer-6-nonce-timestamp-uuid.md)
-* [Layer 4: API Layer](layers/layer-7-api-layer.md)
+* [Layer 2: Cryptographic Layer](layers/layer-2-cryptographic-layer.md)
+* [Layer 3: Metadata Layer](layers/layer-3-metadata.md)
+* [Layer 4: API Layer](layers/layer-4-api-layer.md)
 
