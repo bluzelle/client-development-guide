@@ -4,14 +4,6 @@ The Bluzelle architecture consists of a request-response system through WebSocke
 
 Database requests and responses are [protobuf](https://github.com/google/protobuf) serial output. The protobuf specification files are found in the [proto directory](https://github.com/bluzelle/swarmDB/tree/devel/proto) of the Bluzelle daemon. Specific examples of sending and receiving messages are given below.
 
-{% hint style="info" %}
-Note: While not restricted by protobuf, the maximum size for keys is 4kB and the maximum size for values is 256kB.
-{% endhint %}
-
-{% hint style="info" %}
-The WebSocket needs to be configured to send and receive binary data. This is a language-dependent.
-{% endhint %}
-
 ## Requests and Responses
 
 Please see the [protobuf documentation](https://developers.google.com/protocol-buffers/) for details on using protobuf in your language.
