@@ -2,3 +2,5 @@
 
 This guide is designed as a layered model, with each layer providing an invariant or service to the layer above. While it is not necessary for a client to use this model, it is the recommended architecture for client applications, and will be the means of presentation for this guide.
 
+Outgoing messages proceed from layer 4 through to layer 1. Incoming messages start at layer 1 and proceed to layer 4.
+
