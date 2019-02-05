@@ -2,25 +2,14 @@
 
 ### Background
 
-In the event that the WebSocket connection is disrupted, a new connection should be re-established to the same node without user intervention.
+This layer is responsible for establishing and maintaining a WebSocket connection.
 
 ### Specification
 
-* If a connection closes, attempt to re-establish a connection.
-* If a connection cannot be re-established after retrying, relay an error message to the user, such as "node died".
-* If a request is sent after connection failure and prior to re-establishment, the layer responds with a "NO CONNECTION" error, which is handled in layer 4.
-* If a request was sent prior to connection failure, no reply was received, and it was within 200ms of connection failure, the message response is undefined.
-  * For non-mutating requests, the message should be resent after re-establishment.
-  * For mutating requests, the database state is undefined. The behavior in this circumstance is currently undefined.
+* The WebSocket should send and receive binary messages. 
 * All subsequent layers should assume a persistent connection.
 
 {% hint style="info" %}
-Future versions of client libraries may utilize a connection pool so to not rely on a single connection nor a single node. 
+Future versions of client libraries may utilize a connection pool to distribute reliance on a single connections.
 {% endhint %}
-
-{% hint style="info" %}
-Post-Bernoulli, connections must also re-establish subscriptions.
-{% endhint %}
-
-
 

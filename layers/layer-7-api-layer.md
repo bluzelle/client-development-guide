@@ -1,20 +1,16 @@
-# Layer 7: API Layer
-
-{% hint style="info" %}
-v0.4.x Bernoulli _might_ include subscription.
-{% endhint %}
+# Layer 4: API Layer
 
 ### Background
 
-As the top level of the library, the API layer provides the final mapping from protobuf requests & responses to the end-user interface.
+As the top level of the library, the API layer provides the final mapping from protobuf requests & responses to the API functions that the user calls.
 
 ### Specification
 
-* Outgoing messages may only be of the `database_request` type.
-* Incoming messages may only be of the `database_response` type.
-* Requests and responses should always be matched up \(ie. a `read_request` receives a `read_response`\).
-  * Subscription requests are the exception. They receive many responses of the type `subscription_update` until terminated with a separate unsubscribe request.
-* The API may be blocking or non-blocking while asynchronous calls are being made.
-* A the outcome of a request that does not receive a response is undefined. 
-  * If the request is mutating, the database state is undefined until it receives a response.
+* Outgoing messages are of the`database_msg` or `status_request` types.
+* Incoming messages are of the`database_response` or `status_response`types.
+* Requests and responses are always matched up \(ie. a `read_request` receives a `read_response`\).
+  * Any message can receive a `database_error`, which has an embedded error message.
+* As shown in [database.proto](https://github.com/bluzelle/swarmDB/blob/devel/proto/database.proto), keys are strings and values are binary.
+  * Keys should be enforced to 4kB and values to 256kB.
+* The API should be non-blocking while asynchronous calls are being made \(there are usually language-dependent constructions for handling asynchronous behavior\).
 
