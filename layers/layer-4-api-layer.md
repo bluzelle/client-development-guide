@@ -4,6 +4,10 @@
 
 As the top level of the library, the API layer provides the final mapping from protobuf requests & responses to the API functions that the user calls.
 
+Bluzelle allows for basic operations \(create, read, update, delete\) alongside administrative calls \(createDB, deleteDB, addWriters, ..\). See [bluzelle-js](https://devel-docs.bluzelle.com/bluzelle-js/).
+
+There is also a "status" call that is independent of the database calls. It receives swarm metadata.
+
 ### Specification
 
 * Outgoing messages are of the`database_msg` or `status_request` types.
