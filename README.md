@@ -2,7 +2,9 @@
 
 ## Basic Concepts 
 
-WebSockets The Bluzelle database communicates over WebSockets. Given an entry point \(such as `ws://bernoulli.bluzelle.com:51010`\), all communication happens over messages sent back and forth over the WebSocket.
+## WebSockets 
+
+The Bluzelle database communicates over WebSockets. Given an entry point \(such as `ws://bernoulli.bluzelle.com:51010`\), all communication happens over messages sent back and forth over the WebSocket.
 
 ## Consensus 
 
