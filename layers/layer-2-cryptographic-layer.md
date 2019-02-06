@@ -26,7 +26,7 @@ Cryptography is employed for permissioning \(ex. who can modify databases\) and 
    4. Concatenate all of the strings in the same order that they were given. Empty message example: "120\|MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEHLmWG+xY1lZak68iQMFCh2Vm1EfkEOkbclWWbEO1s+qpf6D6D/Yjo9CR2/zLHWkgTqo71nnjWWEU5FekTHjVmQ==2\|100\|1\|0"
    5. Convert this string to binary with ascii as the encoding.
    6. Sign the binary with the ECDSA private key.
-   7. Embed the signature in the protobuf file.
+   7. Embed the signature in the `bzn_envelope`.
 
 ### Incoming Messages
 
